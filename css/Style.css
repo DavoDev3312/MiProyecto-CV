@@ -2,14 +2,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    outline: none;
 }
 
-
-body{
-    font-family: "Open Sans", sans-serif;
-    color: #444444;
-}
 
 header nav{
 
@@ -19,7 +16,7 @@ header nav{
     align-items: center;
     background-color: lightskyblue;
     font-size: 30px;
-    
+    position: static;
 }
 
 header nav ul li{
@@ -27,6 +24,12 @@ header nav ul li{
     display: inline-flex;
     font-size: 20px;
     padding: 5px;
+    text-decoration: none;
+    outline: none;
+}
+
+.Titulo-nav:hover{
+    background-color: lightgoldenrodyellow;
 }
 
 header nav ul li:hover{
@@ -36,28 +39,190 @@ header nav ul li:hover{
 }
 
 
+
 header nav ul li img{
     width: 20px;
     height: 20px; 
-    
+    margin-left: 15px;
+}
+
+header nav ul li img:hover{
+    transition: 0.6s;
+    rotate: 360deg;
 }
 
 .contenedor{
     position: relative;
 }
+
 .contenedor div h1{
     position: absolute;
     top: 400px;
-    right: 750px;
+    right: 550px;
     color: lightgrey;
-    font-size: 40px;
+    font-size: 70px;
 }
+
 
 .contenedor div h2{
     position: absolute;
-    top: 450px;
-    right: 715px;
+    top: 480px;
+    right: 700px;
     color: lightgrey;
-    font-size: 35px;
+    font-size: 30px;
+}
+
+.boton{
+    background-color: lightgrey;
+    border: 2px solid lightgrey;
+    padding: 10px;
+    border-radius: 20%;
+    position: absolute;
+    top: 650px;
+    right: 850px;
+    text-decoration: none;
+    outline: none;
+    width: 100px;
+    text-align: center;
+}
+
+.boton:hover{
+    transition: 0.5s;
+    opacity: 80%;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.75);
+}
+
+.boton:visited{
+    color: lightgrey;
+    background-color: lightgrey;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+/*A cerca de mi*/
+
+.Primera-seccion{
+    display: grid;
+    padding: 100px;
+    height: 30%;
+    width: 80%;
+    grid-template-columns: 400px 350px 250px;
+    grid-template-rows:  25px 100px 15px 20px 25px 50px;
+    grid-template-areas: 
+    "Foto-davo Titulo-2 Titulo-2"
+    "Foto-davo Parrafo-2 Parrafo-2"
+    "Foto-davo Parrafo-3 Parrafo-4"
+    "Foto-davo Parrafo-5 Parrafo-6"
+    "Foto-davo Parrafo-7 Parrafo-8"
+    "Foto-davo Parrafo-9 Parrafo-9"
+    ;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 40px;
+    margin-left: 150px;
+}
+
+.Foto-davo{
+    grid-area: Foto-davo;
+    width: 425px;
+    height: 550px;
+}
+.Titulo-2{
+    grid-area: Titulo-2;
+    text-decoration: underline  lightskyblue;
+}
+
+.Parrafo-2{
+    grid-area: Parrafo-2;
+}
+
+.Parrafo-3{
+    grid-area: Parrafo-3;
+}
+
+.Parrafo-4{
+    grid-area: Parrafo-4;
+}
+
+.Parrafo-5{
+    grid-area: Parrafo-5;
+}
+
+.Parrafo-6{
+    grid-area: Parrafo-6;
+}
+
+.Parrafo-7{
+    grid-area: Parrafo-7;
+}
+
+.Parrafo-8{
+    grid-area: Parrafo-8;
+}
+
+.Parrafo-9{
+    grid-area: Parrafo-9;
+}
+
+.Primera-seccion{
+    font-size: 25px;
+}
+
+.Segunda-seccion{
+    display: grid;
+    height: 30%;
+    width: 80%;
+    grid-template-rows: 50px 150px 50px 50px 50px;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: 
+    "Titulo-h Titulo-h"
+    "parrafo-h parrafo-h"
+    "parrafo-h1 parrafo-h4"
+    "parrafo-h2 parrafo-h5"
+    "parrafo-h3 parrafo-h6"
+    ;
+    justify-content: center;
+    row-gap: px;
+    column-gap: 50px;
+    margin-left: 270px;
+    font-size: 25px;
+    padding-top: 100px;
+}
+
+.Titulo-h{
+    grid-area: Titulo-h;
+    margin: 0 auto;
+    text-decoration: underline lightskyblue;
+}
+
+.parrafo-h{
+    grid-area: parrafo-h;
+}
+
+.parrafo-h1{
+    grid-area: parrafo-h1;
+}
+
+.parrafo-h2{
+    grid-area: parrafo-h2;
+}
+
+.parrafo-h3{
+    grid-area: parrafo-h3;
+
+}
+
+.parrafo-h4{
+    grid-area: parrafo-h4;
+
+}
+
+.parrafo-h5{
+    grid-area: parrafo-h5;
+
+}
+
+.parrafo-h6{
+    grid-area: parrafo-h6;
+
 }
 

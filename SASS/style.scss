@@ -90,9 +90,6 @@ header nav{
 }
 
 
-
-
-
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 /*A cerca de mi*/
 
@@ -155,33 +152,62 @@ header nav{
     text-decoration: underline  lightskyblue;
 }
 
-.Segunda-seccion{
+.Segunda-seccion {
     display: grid;
     height: 30%;
     width: 80%;
     grid-template-rows: 50px 85px 50px 50px 50px;
     grid-template-columns: 500px 500px;
-    grid-template-areas: 
-    "Titulo-h Titulo-h"
-    "parrafo-h parrafo-h"
-    "parrafo-h1 parrafo-h4"
-    "parrafo-h2 parrafo-h5"
-    "parrafo-h3 parrafo-h6"
-    ;
+    grid-template-areas:
+        "Titulo-h Titulo-h"
+        "parrafo-h parrafo-h"
+        "parrafo-h1 parrafo-h4"
+        "parrafo-h2 parrafo-h5"
+        "parrafo-h3 parrafo-h6";
     justify-content: center;
     row-gap: px;
     column-gap: 50px;
     margin-left: 270px;
     font-size: 25px;
     padding-top: 100px;
-    
-    .Titulo-h{
-        grid-area: Titulo-h;
-        margin: 0 auto;
-        text-decoration: underline lightskyblue;
-     
 }
-}
+
+
+@media (max-width: 546px) {
+    .Primera-seccion {
+        height: auto;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "Foto-davo"
+            "Titulo-2"
+            "Parrafo-2"
+            "Parrafo-3"
+            "Parrafo-4"
+            "Parrafo-5"
+            "Parrafo-6"
+            "Parrafo-7"
+            "Parrafo-8"
+            "Parrafo-9";
+    } 
+    .Segunda-seccion{
+        height: auto;
+        padding: 10px;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Titulo-h"
+        "parrafo-h"
+        "parrafo-h1" 
+        "parrafo-h4"
+        "parrafo-h2" 
+        "parrafo-h5"
+        "parrafo-h3"
+        "parrafo-h6"
+        ;
+  }
+     }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 /*Formación*/

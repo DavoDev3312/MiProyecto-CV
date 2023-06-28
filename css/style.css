@@ -158,12 +158,23 @@ header nav .Titulo-nav:hover {
   font-size: 25px;
   padding-top: 100px;
 }
-.Segunda-seccion .Titulo-h {
-  grid-area: Titulo-h;
-  margin: 0 auto;
-  text-decoration: underline lightskyblue;
-}
 
+@media (max-width: 546px) {
+  .Primera-seccion {
+    height: auto;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "Foto-davo" "Titulo-2" "Parrafo-2" "Parrafo-3" "Parrafo-4" "Parrafo-5" "Parrafo-6" "Parrafo-7" "Parrafo-8" "Parrafo-9";
+  }
+  .Segunda-seccion {
+    height: auto;
+    padding: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "Titulo-h" "parrafo-h" "parrafo-h1" "parrafo-h4" "parrafo-h2" "parrafo-h5" "parrafo-h3" "parrafo-h6";
+  }
+}
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 /*Formación*/
 .Formacion-1 {

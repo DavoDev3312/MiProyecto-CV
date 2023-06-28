@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+header nav{
+
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightskyblue;
+    font-size: 30px;
+    position: static;
+
+    header nav ul li{
+        font-size: 30px;
+        display: inline-flex;
+        font-size: 20px;
+        padding: 5px;
+        text-decoration: none;
+        outline: none;
+    }
+    header nav ul li:hover{
+        transition: 1s;
+        background-color: lightgoldenrodyellow;
+        opacity: 55%;
+    }
+    header nav ul li img{
+        width: 20px;
+        height: 20px; 
+        margin-left: 15px;
+    }
+    header nav ul li img:hover{
+        transition: 0.6s;
+        rotate: 360deg;
+    }
+    .Titulo-nav:hover{
+        background-color: lightgoldenrodyellow;
+     }
+}
+
+.contenedor{
+    position: relative;
+}
+
+.contenedor div h2{
+    position: absolute;
+    top: 480px;
+    right: 700px;
+    color: lightgrey;
+    font-size: 30px;
+}
+
+.contenedor div h1{
+    position: absolute;
+    top: 400px;
+    right: 550px;
+    color: lightgrey;
+    font-size: 70px;
+} 
+
+.boton{
+    background-color: lightgrey;
+    border: 2px solid lightgrey;
+    padding: 10px;
+    border-radius: 20%;
+    position: absolute;
+    top: 650px;
+    right: 850px;
+    text-decoration: none;
+    outline: none;
+    width: 100px;
+    text-align: center;
+    transition: 1s;
+}
+.boton.boton:hover{
+    transition: 1s;
+    opacity: 70%;
+    width: 150px; 
+}
+
+.boton:visited{
+    color: rgb(255, 253, 253);
+    background-color: rgb(255, 249, 249);
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+/*A cerca de mi*/
+
+.Primera-seccion{
+    display: grid;
+    padding: 100px;
+    height: 30%;
+    width: 80%;
+    grid-template-columns: 400px 360px 150px;
+    grid-template-rows:  25px 200px 15px 20px 15px 20px;
+    grid-template-areas: 
+    "Foto-davo Titulo-2 Titulo-2"
+    "Foto-davo Parrafo-2 Parrafo-2"
+    "Foto-davo Parrafo-3 Parrafo-4"
+    "Foto-davo Parrafo-5 Parrafo-6"
+    "Foto-davo Parrafo-7 Parrafo-8"
+    "Foto-davo Parrafo-9 Parrafo-9"
+    ;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 40px;
+    margin-left: 150px;
+     .Parrafo-2{
+        grid-area: Parrafo-2;
+    }
+     .Parrafo-3{
+        grid-area: Parrafo-3;
+    }
+     .Parrafo-4{
+        grid-area: Parrafo-4;
+    }
+     .Parrafo-5{
+        grid-area: Parrafo-5;
+    }
+    .Parrafo-6{
+        grid-area: Parrafo-6;
+    }
+     .Parrafo-7{
+        grid-area: Parrafo-7;
+    }
+     .Parrafo-8{
+        grid-area: Parrafo-8;
+    }
+    .Parrafo-9{
+        grid-area: Parrafo-9;
+    }
+    
+}
+
+.Primera-seccion{
+    font-size: 25px;
+}
+ .Foto-davo{
+    grid-area: Foto-davo;
+    width: 425px;
+    height: 550px;
+}
+.Titulo-2{
+    grid-area: Titulo-2;
+    text-decoration: underline  lightskyblue;
+}
+
+.Segunda-seccion{
+    display: grid;
+    height: 30%;
+    width: 80%;
+    grid-template-rows: 50px 85px 50px 50px 50px;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: 
+    "Titulo-h Titulo-h"
+    "parrafo-h parrafo-h"
+    "parrafo-h1 parrafo-h4"
+    "parrafo-h2 parrafo-h5"
+    "parrafo-h3 parrafo-h6"
+    ;
+    justify-content: center;
+    row-gap: px;
+    column-gap: 50px;
+    margin-left: 270px;
+    font-size: 25px;
+    padding-top: 100px;
+    
+    .Titulo-h{
+        grid-area: Titulo-h;
+        margin: 0 auto;
+        text-decoration: underline lightskyblue;
+     
+}
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+/*Formación*/
+
+.Formacion-1{
+    display: grid;
+    height: 30%;
+    width: 80%;
+    grid-template-rows: 300px 180px 100px 50px;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: 
+    "Foto-ipn Foto-ipn"
+    "parrafo-f1 parrafo-f1"
+    "experiencias trabajo"
+    "parrafo-e parrafo-t"
+    ;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 50px;
+    margin-left: 270px;
+    font-size: 25px;
+    padding-top: 50px;
+   
+}
+
+.Foto-ipn{
+    grid-area: Foto-ipn;
+    margin: 0 auto;
+}
+.parrafo-f1{
+    grid-area: parrafo-f1;
+}
+.experiencias{
+    grid-area: experiencias;
+    margin: 0 auto;
+    text-decoration: underline  lightskyblue;
+}
+.trabajo{
+    grid-area: trabajo;
+}
+.parrafo-e{
+    grid-area: parrafo-e;
+    margin: 0 auto;
+}
+.parrafo-t{
+    grid-area: parrafo-t;
+}
+
+.parrafo-h{
+    grid-area: parrafo-h;
+}
+.parrafo-h1{
+    grid-area: parrafo-h1;
+}
+.parrafo-h2{
+    grid-area: parrafo-h2;
+}
+.parrafo-h3{
+    grid-area: parrafo-h3;
+
+}
+.parrafo-h4{
+    grid-area: parrafo-h4;
+
+}
+.parrafo-h5{
+    grid-area: parrafo-h5;
+
+}
+.parrafo-h6{
+    grid-area: parrafo-h6;
+}
+
+.Direccion{
+    text-decoration: underline  lightskyblue;
+}
+   
+  .Referencias{
+    display: grid;
+    height: 30%;
+    width: 80%;
+    grid-template-rows: 100px 100px 310px 310px;
+    grid-template-columns: 310px 310px 340px 310px 310px;
+    margin-top: 300px;
+    margin-left: 200px;
+    
+  }
+
+   .Foto-Sofia{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border-radius: 50%;
+    height: 270px;
+    width: 270px;
+    margin: 0 auto;
+  }
+ .Datos-sofia{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.Foto-Isaac{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    border-radius: 50%;
+    height: 270px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.Datos-Isaac{
+    grid-row: 4/5;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+ .Foto-Rebecca{
+    grid-column: 5/6;
+    grid-row: -3/-2;
+     border-radius: 50%;
+    height: 270px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+ .Datos-Rebecca{
+    grid-column: 5/6;
+    grid-row: 4/5;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+ .titulo-r{
+    grid-column: 3/4;
+    font-size: 40px;
+    margin: 0 auto;
+    text-decoration: underline  lightskyblue;
+    margin-bottom: 10px;
+}
+ .Nombre-s{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-size: 25px;
+    margin: 0 auto;
+}
+ .Nombre-i{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.Nombre-r{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+/*Contacto*/
+
+.Formulario{
+    width: 400px;
+    background-color: lightslategray;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+ .Formulario h3{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+ .controles{
+        font-size: 18px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+ .Formulario .boton{
+    margin: auto;
+    }
+    
+}
+
+

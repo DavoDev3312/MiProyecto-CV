@@ -6,28 +6,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
         <title> Formación </title>
     </head>
     <body>
         <header>
-            <nav>
-                 
-                <h1 class="titulo-nav"><a href="../index.html">DAVID</a></h1>
-                    <ul>
-                    <li><a href="../index.html"> Inicio</a></li>
-                       <li><a href="./Acercademi.html">Acerca de mi</a></li>
-                       <li><a href="#">Formación</a></li>
-                       <li><a href="./Contacto.html">Contacto</a></li>
-                   </ul>
-               
-                    <ul>
-                       <li class="icono-1"><a href="https://www.facebook.com/david.velazquezcorona.1"><img src="../iconos/facebook.svg" alt="facebook"></a></li>
-                       <li class="icono-2"><a href="https://www.instagram.com/davovc01/"><img src="../iconos/instagram.svg" alt="instagram"></a></li>
-                       <li class="icono-3"><a href="https://wa.pe/v59aR7RU76"><img src="../iconos/whatsapp.svg" alt="whatsapp"></a></li>
-                   </ul>
-               
-           </nav>
+            <nav class="navbar bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"> Mi CV</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                          <li class="nav-item">
+                             <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link active" aria-current="page" href="./Acercademi.html">About me</a>
+                         </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Formation</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="./Contacto.html">Contact</a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
         </header>
-        
+        <main>
+            <section class="Formacion-1">
+                <img class="Foto-ipn " src="../imagenes/Logo-IPN.png" alt="Imagen de la escuela" width="300px" height="300px">
+                <p class="parrafo-f1"> Actualmente me encuentro estudiando la Licenciatura en Informatica en la Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas (UPIICSA, IPN), me encuentro en 5to semestre de 8. </p>
+                <h1 class="experiencias">Experiencia</h1>
+                <p class="parrafo-e"> Tengo experiencia como tester, estuve trabajando 6 meses como becario en Grupo Carso CTIN, analizando y reportando errores en la app de ClaroVideo, hace tiempo trabajé de mesero durante 4 meses, en Alu´s Hamburguesas, de lo cual aprendí a dar un servicio al cliente, en modo, tiempo y forma.</p>
+                <h1 class="Direccion">Dirección</h1>
+                <p> <b> Grupo Carso (CTIN):</b> Torre Frisco, C.Lago Zurich 245, Granada, 11529 <br> <b>Alu's Hamburguesas:</b> Fernando Iglesias Calderon #140, Jardín Balbuena, Venustiano Carranza, 15900</p>
+            </section>
+                  
+            <section class="Referencias">
+                 <h1 class="titulo-r"> Referencias</h1>
+                 <p class="Nombre-s"> Sofía Lopez Robredo</p>
+                 <img class="Foto-Sofia" src="../imagenes/Imagen Sofía.jpeg" alt="Imagen Sofía">
+                 <p class="Datos-sofia"> 5529673306 <br> sofiarobre@gmail.com </p>
+                 <p class="Nombre-i"> Jorge Isaac Rodríguez Corona</p>
+                 <img class="Foto-Isaac" src="../imagenes/Foto-Isaac.jpg" alt="Imagen Isaac">
+                 <p class="Datos-Isaac"> 5536763193 <br> isaacrdzcc@gmail.com</p>
+                 <p class="Nombre-r"> Rebecca Velázquez Corona</p>
+                 <img class="Foto-Rebecca" src="../imagenes/Foto-Becca.jpeg" alt="Imagen Rebecca">
+                 <p class="Datos-Rebecca"> 5533964408 <br> beccavc99@gmail.com</p>
+                
+            </section>
+
+            
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 </html>

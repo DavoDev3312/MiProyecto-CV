@@ -352,81 +352,44 @@ header nav{
     grid-template-columns: 310px 310px 340px 310px 310px;
     margin-top: 300px;
     margin-left: 200px;
-    
+    grid-template-areas: 
+    "titulo-r titulo-r titulo-r"
+    "R1 R2 R3"
+    ;
+
+    padding: 100px;
+    margin-left: 400px;
   }
 
-   .Foto-Sofia{
-    grid-column: 3/4;
-    grid-row: 3/4;
-    border-radius: 50%;
-    height: 270px;
-    width: 270px;
-    margin: 0 auto;
-  }
- .Datos-sofia{
-    grid-column: 3/4;
-    grid-row: 4/5;
-    margin: 0 auto;
+  .R1{
+    grid-area: R1;
     font-size: 25px;
+    row-gap: 20px;
+    padding: 10px;
 }
 
-.Foto-Isaac{
-    grid-row: 3/4;
-    grid-column: 1/2;
-    border-radius: 50%;
-    height: 270px;
-    width: 270px;
-    margin: 0 auto;
-}
-
-.Datos-Isaac{
-    grid-row: 4/5;
+.R2{
+    grid-area: R2;
     font-size: 25px;
-    margin: 0 auto;
+    row-gap: 20px;
+    padding: 10px;
 }
 
- .Foto-Rebecca{
-    grid-column: 5/6;
-    grid-row: -3/-2;
-     border-radius: 50%;
-    height: 270px;
-    width: 270px;
-    margin: 0 auto;
-}
-
- .Datos-Rebecca{
-    grid-column: 5/6;
-    grid-row: 4/5;
+.R3{
+    grid-area: R3;
     font-size: 25px;
-    margin: 0 auto;
+    row-gap: 20px;
+    padding: 10px;
 }
 
- .titulo-r{
-    grid-column: 3/4;
-    font-size: 40px;
-    margin: 0 auto;
+.titulo-r{
+    grid-area: titulo-r;
+    row-gap: 20px;
+    text-align: center;
     text-decoration: underline  lightskyblue;
-    margin-bottom: 10px;
-}
- .Nombre-s{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    font-size: 25px;
-    margin: 0 auto;
-}
- .Nombre-i{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    font-size: 25px;
-    margin: 0 auto;
 }
 
-.Nombre-r{
-    grid-column: 5/6;
-    grid-row: 2/3;
-    font-size: 25px;
-    margin: 0 auto;
-}
+   
 
 @media (max-width: 546px){
     .Formacion-1{

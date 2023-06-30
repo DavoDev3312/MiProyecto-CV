@@ -348,17 +348,16 @@ header nav{
     display: grid;
     height: 30%;
     width: 80%;
-    grid-template-rows: 100px 100px 310px 310px;
-    grid-template-columns: 310px 310px 340px 310px 310px;
-    margin-top: 300px;
+    grid-template-rows:  repeat(2, auto);
+    grid-template-columns:  repeat(3, 1fr);
+    margin-top: 200px;
     margin-left: 200px;
     grid-template-areas: 
     "titulo-r titulo-r titulo-r"
     "R1 R2 R3"
     ;
-
     padding: 100px;
-    margin-left: 400px;
+    margin-left: 300px;
   }
 
   .R1{
@@ -366,6 +365,7 @@ header nav{
     font-size: 25px;
     row-gap: 20px;
     padding: 10px;
+    
 }
 
 .R2{
@@ -373,6 +373,7 @@ header nav{
     font-size: 25px;
     row-gap: 20px;
     padding: 10px;
+    
 }
 
 .R3{
@@ -380,6 +381,7 @@ header nav{
     font-size: 25px;
     row-gap: 20px;
     padding: 10px;
+    
 }
 
 .titulo-r{
@@ -387,6 +389,18 @@ header nav{
     row-gap: 20px;
     text-align: center;
     text-decoration: underline  lightskyblue;
+}
+
+.Foto-Sofia{
+    border-radius: 50%;
+}
+
+.Foto-Rebecca{
+    border-radius: 50%;
+}
+
+.Foto-Isaac{
+    border-radius: 50%;
 }
 
    
@@ -410,7 +424,23 @@ header nav{
         "parrafo-t"
         ;
 }
+
+.Referencias{
+    height: auto;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo-r"
+    "R1"
+    "R2" 
+    "R3"
+    ;
 }
+  }   
 
 @media (max-width: 768px){
     .Formacion-1{
@@ -430,6 +460,22 @@ header nav{
         "Direccion"
         "parrafo-t"
         ;
+}
+
+.Referencias{
+    height: auto;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo-r"
+    "R1"
+    "R2" 
+    "R3"
+    ;
 }
 }
 

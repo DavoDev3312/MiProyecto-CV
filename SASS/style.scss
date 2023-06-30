@@ -89,6 +89,17 @@ header nav{
     background-color: rgb(255, 249, 249);
 }
 
+@media (max-width: 546px) {
+    .boton{
+        margin: 0 auto;
+        top: 300px;
+        right: 200px;
+    }
+    .contenedor .nombre{
+       
+    }
+}
+
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 /*A cerca de mi*/
@@ -177,6 +188,9 @@ header nav{
     .Primera-seccion {
         height: auto;
         padding: 10px;
+        margin: 0px;
+        width: 100%;
+        justify-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -194,6 +208,9 @@ header nav{
     .Segunda-seccion{
         height: auto;
         padding: 10px;
+        margin: 0px;
+        width: 100%;
+        justify-items: center;
         grid-template-rows: auto;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -208,6 +225,48 @@ header nav{
         ;
   }
      }
+
+     @media (max-width: 768px) {
+        .Primera-seccion {
+            height: auto;
+            padding: 10px;
+            margin: 0px;
+            width: 100%;
+            justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "Foto-davo"
+                "Titulo-2"
+                "Parrafo-2"
+                "Parrafo-3"
+                "Parrafo-4"
+                "Parrafo-5"
+                "Parrafo-6"
+                "Parrafo-7"
+                "Parrafo-8"
+                "Parrafo-9";
+        } 
+        .Segunda-seccion{
+            height: auto;
+            padding: 10px;
+            margin: 0px;
+            width: 100%;
+            justify-items: center;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "Titulo-h"
+            "parrafo-h"
+            "parrafo-h1" 
+            "parrafo-h4"
+            "parrafo-h2" 
+            "parrafo-h5"
+            "parrafo-h3"
+            "parrafo-h6"
+            ;
+      }
+         } 
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 /*Formación*/
@@ -368,6 +427,49 @@ header nav{
     font-size: 25px;
     margin: 0 auto;
 }
+
+@media (max-width: 546px){
+    .Formacion-1{
+        height: auto;
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        justify-items: center;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Foto-ipn"
+        "parrafo-f1"
+        "experiencias" 
+        "trabajo"
+        "parrafo-e"
+        "Direccion"
+        "parrafo-t"
+        ;
+}
+}
+
+@media (max-width: 768px){
+    .Formacion-1{
+        height: auto;
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        justify-items: center;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Foto-ipn"
+        "parrafo-f1"
+        "experiencias" 
+        "trabajo"
+        "parrafo-e"
+        "Direccion"
+        "parrafo-t"
+        ;
+}
+}
+
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
 /*Contacto*/

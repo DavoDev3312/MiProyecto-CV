@@ -49,29 +49,27 @@ body {
 }
 
 .contenedor div h2 {
-  position: absolute;
-  top: 480px;
-  right: 700px;
+  display: flex;
+  justify-content: center;
   color: lightgrey;
   font-size: 30px;
 }
 
 .contenedor div h1 {
-  position: absolute;
-  top: 400px;
-  right: 550px;
+  display: flex;
+  justify-content: center;
   color: lightgrey;
   font-size: 70px;
+  margin-top: 400px;
 }
 
 .boton {
   background-color: lightgrey;
   border: 2px solid lightgrey;
   padding: 10px;
-  border-radius: 20%;
-  position: absolute;
-  top: 650px;
-  right: 850px;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   outline: none;
   width: 100px;
@@ -90,9 +88,30 @@ body {
   background-color: rgb(255, 249, 249);
 }
 
+@media (max-width: 768px) {
+  .contenedor div h2 {
+    font-size: 20px;
+  }
+  .contenedor div h1 {
+    font-size: 45px;
+    margin-top: 200px;
+  }
+  .boton {
+    margin-top: 50px;
+    margin-left: 330px;
+  }
+}
 @media (max-width: 546px) {
-  .contenedor {
-    position: relative;
+  .contenedor div h2 {
+    font-size: 20px;
+  }
+  .contenedor div h1 {
+    font-size: 45px;
+    margin-top: 200px;
+  }
+  .boton {
+    margin-top: 50px;
+    margin-left: 230px;
   }
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/

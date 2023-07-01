@@ -6,6 +6,7 @@
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   outline: none;
+  color: white;
 }
 
 header nav {
@@ -43,8 +44,8 @@ header nav .Titulo-nav:hover {
   background-color: lightgoldenrodyellow;
 }
 
-.contenedor {
-  position: relative;
+body {
+  background-image: url("../imagenes/2147.webp");
 }
 
 .contenedor div h2 {
@@ -90,10 +91,8 @@ header nav .Titulo-nav:hover {
 }
 
 @media (max-width: 546px) {
-  .boton {
-    margin: 0 auto;
-    top: 300px;
-    right: 200px;
+  .contenedor {
+    position: relative;
   }
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -164,6 +163,11 @@ header nav .Titulo-nav:hover {
   margin-left: 270px;
   font-size: 25px;
   padding-top: 100px;
+}
+
+.Titulo-h {
+  text-decoration: underline lightskyblue;
+  margin: 0 auto;
 }
 
 @media (max-width: 546px) {
@@ -381,7 +385,7 @@ header nav .Titulo-nav:hover {
     justify-items: center;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "titulo-r" "R1" "R2" "R3";
+    grid-template-areas: "titulo-r" "R1 R2" "R3";
   }
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
